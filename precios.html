@@ -65,15 +65,15 @@
 
         <ul class="nav nav-tabs boots5-tabs">
             <li class="active"><a data-toggle="tab" href="#precios">Precios</a></li>
-            <li><a data-toggle="tab" href="#formapago">Formas de pago</a></li>
+            <li class=""><a data-toggle="tab" href="#formapago">Formas de pago</a></li>
         </ul>
 
         <br>
-    
-        <div class="tab-content">
-            <div id="precios" class="tab-pane fade in active">
 
-                <h1>Lorem ipsum dolor, sit consectetur elit.</h1>
+        <div class="tab-content">
+            <div id="precios" class="tab-pane fade in show active">
+
+                <h2>Precios de los productos</h2>
 
                 <div class="table-responsive">
                     <table class="table table-striped table-dark">
@@ -124,9 +124,51 @@
             </div>
 
             <div id="formapago" class="tab-pane fade">
-                <h3>Menu 1</h3>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
+                <h2>Formas de pago</h2>
+
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed myCollapse" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    Tarjeta de Débito
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+                                squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                                craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed myCollapse" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Tarjeta de Crédito
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+                                squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                                craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                                butcher vice lomo. Leggings occaecat craft beer farm-to-table.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </div>

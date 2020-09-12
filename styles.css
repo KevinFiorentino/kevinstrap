@@ -43,6 +43,13 @@ header .jumbotron {
     }
 }
 
+.myCollapse {
+    text-decoration: none;
+}
+.myCollapse:hover {
+    color: #304ffe;
+}
+
 .boots5-tabs li {
     background-color: #90a4ae;
     color: white;
@@ -60,7 +67,19 @@ header .jumbotron {
 }
 
 footer {
-    background-color: lightgrey;
+    background-color: #424242;
     margin-top: 3vw;
     padding: 2vw;
+}
+footer h4 {
+    color: #fafafa;
+}
+footer p {
+    color: #fafafa;
+}
+footer a {
+    color: #fafafa;
+}
+footer a:hover {
+    color: #e3f2fd;
 }
