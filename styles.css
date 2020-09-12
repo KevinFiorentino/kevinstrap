@@ -2,7 +2,8 @@ h1, h2, h3, h4 {
     font-weight: bold;
 }
 a {
-    color: black    
+    color: black;
+    text-decoration: none;
 }
 .oi {
     font-size: 18px;
@@ -40,6 +41,17 @@ header .jumbotron {
     .caja-producto {
         width: 98%;
     }
+}
+
+.boots5-tabs li {
+    background-color: #90a4ae;
+    color: white;
+    padding: 15px;
+    margin-right: 5px;
+    border-radius: 4px;
+}
+.boots5-tabs li a {
+    color: white;
 }
 
 .formulario {
