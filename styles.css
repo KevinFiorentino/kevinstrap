@@ -32,6 +32,9 @@ header .jumbotron {
     padding: 15px;
     padding-top: 0;
 }
+.caja-footer span{
+    margin: 5px;
+}
 @media (max-width: 991px) {
     .caja-producto {
         width: 48%;
@@ -49,16 +52,27 @@ header .jumbotron {
 .myCollapse:hover {
     color: #304ffe;
 }
-
+.btn-popper {
+    margin-right: 5px;
+}
 .boots5-tabs li {
-    background-color: #90a4ae;
-    color: white;
-    padding: 15px;
     margin-right: 5px;
     border-radius: 4px;
 }
 .boots5-tabs li a {
+    background-color: #90a4ae;
+    padding: 15px 15px 5px 15px;
     color: white;
+    border: 1px solid #90a4ae;
+    border-bottom: 0;
+}
+.boots5-tabs li a.active {
+    color: #90a4ae;
+    background-color: white;
+}
+.myAccordionTab {
+    color: #1D1D1D;
+    text-decoration: none;
 }
 
 .formulario {

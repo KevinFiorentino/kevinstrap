@@ -3,6 +3,8 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <title>Kevinstrap5</title>
+
     <link type="text/css" rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="./node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="./styles.css">
@@ -54,7 +56,7 @@
 
     <div class="container">
         <div class="row">
-            <nav aria-label="breadcrumb">
+            <nav class="mb-4" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item active" aria-current="page"><a href="/">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Precios</li>
@@ -64,7 +66,7 @@
 
 
         <ul class="nav nav-tabs boots5-tabs">
-            <li class="active"><a data-toggle="tab" href="#precios">Precios</a></li>
+            <li class="active"><a data-toggle="tab" class="active" href="#precios">Precios</a></li>
             <li class=""><a data-toggle="tab" href="#formapago">Formas de pago</a></li>
         </ul>
 
@@ -128,9 +130,27 @@
 
                 <div id="accordion">
                     <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed myAccordionTab" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Pago en efectivo
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingOne"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
                         <div class="card-header" id="headingTwo">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed myCollapse" data-toggle="collapse" data-target="#collapseTwo"
+                                <button class="btn btn-link collapsed myAccordionTab" data-toggle="collapse" data-target="#collapseTwo"
                                     aria-expanded="false" aria-controls="collapseTwo">
                                     Tarjeta de Débito
                                 </button>
@@ -149,7 +169,7 @@
                     <div class="card">
                         <div class="card-header" id="headingThree">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed myCollapse" data-toggle="collapse"
+                                <button class="btn btn-link collapsed myAccordionTab" data-toggle="collapse"
                                     data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     Tarjeta de Crédito
                                 </button>
@@ -211,8 +231,8 @@
     </footer>
 
     <script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./node_modules/popper/index.js"></script>
     <script type="text/javascript" src="./app.js"></script>
 
 </body>
