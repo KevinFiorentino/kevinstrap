@@ -13,6 +13,9 @@ header .jumbotron {
   margin-top: 50px;
   background-color: lightgrey; }
 
+.carousel {
+  margin-top: 50px; }
+
 .breadcrumb {
   margin-top: 2vw; }
 
