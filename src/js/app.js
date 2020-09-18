@@ -1,3 +1,14 @@
+// Importamos scripts
+import jQuery from "jquery";
+import "popper.js";
+import "bootstrap/dist/js/bootstrap.min.js";
+
+// En webpack, la CSS se importa dentro del JS
+import "bootstrap/dist/css/bootstrap.min.css";
+import "open-iconic/font/css/open-iconic-bootstrap.scss";
+import "../css/styles.scss";
+
+
 var myCarousel = document.querySelector('#carouselBootstrap5')
 var carousel = new bootstrap.Carousel(myCarousel, {
     interval: 3000,

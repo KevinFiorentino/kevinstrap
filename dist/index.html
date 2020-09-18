@@ -1,0 +1,421 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bootstrap 5 + Webpack" />
+    <meta name="author" content="Kevin">
+
+    <title>Kevinstrap5</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="/">Kevinstrap5</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./precios.html">Precios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div id="carouselBootstrap5" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="https://dummyimage.com/1920x400/01579b/000" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item active">
+                    <img src="https://dummyimage.com/1920x400/bf360c/000" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://dummyimage.com/1920x400/1b5e20/000" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselBootstrap5" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselBootstrap5" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </header>
+
+    <div class="container">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page"><a href="/">Home</a></li>
+            </ol>
+        </nav>
+
+        <div class="row">
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h1>Lorem ipsum dolor, sit amet consectetur elit.</h1>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
+                <div class="card shadow-box">
+                    <h3 class="text-center">
+                        <a class="myCollapse" data-toggle="collapse" href="#collapseUno" role="button" aria-expanded="false" aria-controls="collapseUno">
+                            Quidemaspernatur
+                        </a>
+                    </h3>
+                    <div class="collapse text-center" id="collapseUno">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid commodi impedit officiis
+                            quidemaspernatur, laborum rerum delectus sequi dolorem consequuntur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
+                <div class="card shadow-box">
+                    <h3 class="text-center">
+                        <a class="myCollapse" data-toggle="collapse" href="#collapseDos" role="button" aria-expanded="false" aria-controls="collapseDos">
+                            Consequunentur
+                        </a>
+                    </h3>
+                    <div class="collapse text-center" id="collapseDos">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid commodi impedit officiis
+                            laboretotam neque nostrum quidem aspernatur, laborum rerum delectus sequi dolorem consequuntur nemo
+                            magniquam ipsum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
+                <div class="card shadow-box">
+                    <h3 class="text-center">
+                        <a class="myCollapse" data-toggle="collapse" href="#collapseTres" role="button" aria-expanded="false" aria-controls="collapseTres">
+                            Laboretotamyl
+                        </a>
+                    </h3>
+                    <div class="collapse text-center" id="collapseTres">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid commodi impedit officiis
+                            laboretotam neque nostrum quidem aspernatur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><hr><br>
+
+        <h2>Cards sin flexbox, con modal</h2>
+
+        <div class="row">
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mt-3">
+                <div class="card shadow-box">
+                    <img class="card-img-top img-fluid" src="https://dummyimage.com/300x200/01579b/000" alt="Imagen">
+                    <div class="card-body">
+                        <h4>Lorem ipsum dolor sit amet</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure numquam maxime eligendi dicta
+                            vero quos.</p>
+                        <button id="btnModalUno" type="button" class="class-modal btn btn-outline-success w-100" data-toggle="modal"
+                            data-target="#modalUno">Ver producto</button>
+
+                        <div class="modal fade" id="modalUno" tabindex="-1" role="dialog"
+                            aria-labelledby="modalUno" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Lorem ipsum dolor sit amet</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img class="card-img-top img-fluid mb-5" src="https://dummyimage.com/300x200/01579b/000" alt="Imagen">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam provident tempora alias ipsum quod eos aliquam porro maiores error, voluptas saepe doloribus accusamus blanditiis enim numquam nemo qui soluta dignissimos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mt-3">
+                <div class="card shadow-box">
+                    <img class="card-img-top img-fluid" src="https://dummyimage.com/300x200/d50000/000" alt="Img">
+                    <div class="card-body">
+                        <h4>Non aperiam dolorem</h4>
+                        <p>Lorem ipsum dolor sit. Iure numquam maxime eligendi dictavero quos voluptates asperiores
+                            necessitatibus illo a ut ipsa non.</p>
+                        <button id="btnModalDos" type="button" class="class-modal btn btn-outline-success w-100" data-toggle="modal"
+                        data-target="#modalDos">Ver producto</button>
+
+                        <div class="modal fade" id="modalDos" tabindex="-1" role="dialog"
+                        aria-labelledby="modalDos" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Non aperiam dolorem</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img class="card-img-top img-fluid mb-5" src="https://dummyimage.com/300x200/d50000/000" alt="Imagen">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam provident tempora alias ipsum quod eos aliquam porro maiores error, voluptas saepe doloribus accusamus blanditiis enim numquam nemo qui soluta dignissimos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mt-3">
+                <div class="card shadow-box">
+                    <img class="card-img-top img-fluid" src="https://dummyimage.com/300x200/aa00ff/000" alt="Img">
+                    <div class="card-body">
+                        <h4>Consectetur adipisicing elit</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure numquam maxime eligendi
+                            dictavero quos voluptates asperiores.</p>
+                        <button id="btnModalTres" type="button" class="class-modal btn btn-outline-success w-100" data-toggle="modal"
+                        data-target="#modalTres">Ver producto</button>
+
+                        <div class="modal fade" id="modalTres" tabindex="-1" role="dialog"
+                        aria-labelledby="modalTres" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Consectetur adipisicing elit</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img class="card-img-top img-fluid mb-5" src="https://dummyimage.com/300x200/aa00ff/000" alt="Imagen">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam provident tempora alias ipsum quod eos aliquam porro maiores error, voluptas saepe doloribus accusamus blanditiis enim numquam nemo qui soluta dignissimos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mt-3">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="https://dummyimage.com/300x200/e65100/000" alt="Img">
+                    <div class="card-body shadow-box">
+                        <h4>Dolor sit amet consectetur</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure numquam maxime eligendi
+                            dictavero quos voluptates asperiores necessitatibus illo.</p>
+                        <button id="btnModalCuatro" type="button" class="class-modal btn btn-outline-success w-100" data-toggle="modal"
+                        data-target="#modalCuatro">Ver producto</button>
+
+                        <div class="modal fade" id="modalCuatro" tabindex="-1" role="dialog"
+                        aria-labelledby="modalCuatro" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Dolor sit amet consectetur</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img class="card-img-top img-fluid mb-5" src="https://dummyimage.com/300x200/e65100/000" alt="Imagen">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam provident tempora alias ipsum quod eos aliquam porro maiores error, voluptas saepe doloribus accusamus blanditiis enim numquam nemo qui soluta dignissimos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Cards con flexbox</h2>
+
+        <div class="d-flex flex-wrap justify-content-between">
+
+            <div class="caja-producto">
+                <img class="card-img-top img-fluid" src="https://dummyimage.com/300x200/263238/000" alt="Img">
+                <div class="card-body">
+                    <h4>Lorem ipsum dolor</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure numquam maxime eligendi dicta
+                        veroquos.</p>
+                </div>
+                <div class="caja-footer d-flex">
+                    <button type="button" class="btn btn-success btn-popper" data-placement="top" data-toggle="popover" title="Popover title lorem" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure numquam maxime eligendi dictaveroquos.">
+                        <span class="oi oi-zoom-in"></span>
+                    </button>
+                    <button type="button" class="btn btn-outline-success w-100">
+                        Ver producto
+                    </button>
+                </div>
+            </div>
+
+            <div class="caja-producto">
+                <img class="card-img-top img-fluid" src="https://dummyimage.com/300x200/3e2723/000" alt="Img">
+                <div class="card-body">
+                    <h4>Lorem ipsum</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta veroquos voluptates asperiores
+                        necessitatibus aperiam dolorem.</p>
+                </div>
+                <div class="caja-footer d-flex">
+                    <button type="button" class="btn btn-success btn-popper" data-placement="top" data-toggle="popover" title="Popover title lorem" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure numquam maxime eligendi dictaveroquos.">
+                        <span class="oi oi-zoom-in"></span>
+                    </button>
+                    <button type="button" class="btn btn-outline-success w-100">
+                        Ver producto
+                    </button>
+                </div>
+            </div>
+
+            <div class="caja-producto">
+                <img class="card-img-top img-fluid" src="https://dummyimage.com/300x200/00c853/000" alt="Img">
+                <div class="card-body">
+                    <h4>Consectetur adipisicing</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure numquam maxime eligendi dicta
+                        veroquos voluptates asperiores.</p>
+                </div>
+                <div class="caja-footer d-flex">
+                    <button type="button" class="btn btn-success btn-popper" data-placement="top" data-toggle="popover" title="Popover title lorem" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure numquam maxime eligendi dictaveroquos.">
+                        <span class="oi oi-zoom-in"></span>
+                    </button>
+                    <button type="button" class="btn btn-outline-success w-100">
+                        Ver producto
+                    </button>
+                </div>
+            </div>
+
+            <div class="caja-producto">
+                <img class="card-img-top img-fluid" src="https://dummyimage.com/300x200/ffd600/000" alt="Img">
+                <div class="card-body">
+                    <h4>Lorem ipsum dolor sit amet</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure numquam maxime eligendi dicta
+                        veroquos voluptates asperiores.</p>
+                </div>
+                <div class="caja-footer d-flex">
+                    <button type="button" class="btn btn-success btn-popper" data-placement="top" data-toggle="popover" title="Popover title lorem" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure numquam maxime eligendi dictaveroquos.">
+                        <span class="oi oi-zoom-in"></span>
+                    </button>
+                    <button type="button" class="btn btn-outline-success w-100">
+                        Ver producto
+                    </button>
+                </div>
+            </div>
+
+            <div class="caja-producto">
+                <img class="card-img-top img-fluid" src="https://dummyimage.com/300x200/827717/000" alt="Img">
+                <div class="card-body">
+                    <h4>Illo a ut ipsa non</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dicta vero quos
+                        voluptatesasperiores necessitatibus illo a ut ipsa non aperiam.</p>
+                </div>
+                <div class="caja-footer d-flex">
+                    <button type="button" class="btn btn-success btn-popper" data-placement="top" data-toggle="popover" title="Popover title lorem" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure numquam maxime eligendi dictaveroquos.">
+                        <span class="oi oi-zoom-in"></span>
+                    </button>
+                    <button type="button" class="btn btn-outline-success w-100">
+                        Ver producto
+                    </button>
+                </div>
+            </div>
+
+            <div class="caja-producto">
+                <img class="card-img-top img-fluid" src="https://dummyimage.com/300x200/1a237e/000" alt="Img">
+                <div class="card-body">
+                    <h4>voluptatesasperiores sit</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dicta vero quos
+                        voluptatesasperiores necessitatibus illo a ut ipsa non aperiam.</p>
+                </div>
+                <div class="caja-footer d-flex">
+                    <button type="button" class="btn btn-success btn-popper" data-placement="top" data-toggle="popover" title="Popover title lorem" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure numquam maxime eligendi dictaveroquos.">
+                        <span class="oi oi-zoom-in"></span>
+                    </button>
+                    <button type="button" class="btn btn-outline-success w-100">
+                        Ver producto
+                    </button>
+                </div>
+            </div>
+
+            <div class="caja-producto">
+                <img class="card-img-top img-fluid" src="https://dummyimage.com/300x200/6a1b9a/000" alt="Img">
+                <div class="card-body">
+                    <h4>Iure numquam maxime</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur. Iure numquam maxime eligendi dicta vero quos voluptates
+                        asperiores necessitatibus illo a ut ipsa.</p>
+                </div>
+                <div class="caja-footer d-flex">
+                    <button type="button" class="btn btn-success btn-popper" data-placement="top" data-toggle="popover" title="Popover title lorem" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure numquam maxime eligendi dictaveroquos.">
+                        <span class="oi oi-zoom-in"></span>
+                    </button>
+                    <button type="button" class="btn btn-outline-success w-100">
+                        Ver producto
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="d-flex flex-column justify-content-between">
+                        <h4>Nuestras redes</h4>
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">YouTube</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <address>
+                        <h4>Contacto</h4>
+                        <p><span class="oi oi-location"></span>Dirección: Lorem lorem 123</p>
+                        <p><span class="oi oi-envelope-closed"></span>Email: kevinstrap5@gmail.com</p>
+                        <p><span class="oi oi-phone"></span>Teléfono: 11 1234 5678</p>
+                    </address>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="d-flex flex-column justify-content-between align-items-end">
+                        <h4>Mapa del sitio</h4>
+                        <a href="./">Volver al inicio</a>
+                        <a href="./precios.html">Precios</a>
+                        <a href="./contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    
+<script src="bundle.js"></script></body>
+
+</html>
