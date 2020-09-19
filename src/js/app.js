@@ -1,13 +1,17 @@
 // Importamos scripts
-import jQuery from "jquery";
-//import "../../node_modules/popper.js/dist/umd/popper.min.js";
-//import "popper.js";
-import bootstrap from "../../node_modules/bootstrap/dist/js/bootstrap.min.js";
 
+//import "../../node_modules/popper.js/dist/esm/popper-utils.min.js";
 
-// En webpack, la CSS se importa dentro del JS
-import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "../../node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css";
+//import "popper.js/dist/umd/popper";
+import "popper.js/dist/umd/popper";
+
+import bootstrap from "bootstrap/dist/js/bootstrap.min.js";
+
+require('popper.js').default;
+
+// CSS
+import "bootstrap/dist/css/bootstrap.min.css";
+import "open-iconic/font/css/open-iconic-bootstrap.min.css";
 import "../scss/styles.scss";
 
 
@@ -16,6 +20,8 @@ var carousel = new bootstrap.Carousel(myCarousel, {
     interval: 3000,
     wrap: true
 })
+
+
 
 jQuery(function () {
     jQuery('[data-toggle="popover"]').popover()

@@ -1,13 +1,13 @@
+const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-//const WebpackProvideGlobalPlugin = require('webpack-provide-global-plugin');
 
 
 module.exports = {
     entry: './src/js/app.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        filename: '[id].[hash].bundle.js'
     },
     module: {
         rules: [
@@ -46,11 +46,11 @@ module.exports = {
             filename: 'precios.html',
             template: './src/precios.html'
         }),
-        /*
-        new WebpackProvideGlobalPlugin({
-            Popper: ['popper.js', 'default']
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery",
+            Popper: ['popper.js', 'default'],
         })
-        */
     ],
     devServer: {
         port: 5000
