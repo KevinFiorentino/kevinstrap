@@ -1,12 +1,14 @@
 // Importamos scripts
 import jQuery from "jquery";
-import "popper.js";
-import "bootstrap/dist/js/bootstrap.min.js";
+//import "../../node_modules/popper.js/dist/umd/popper.min.js";
+//import "popper.js";
+import bootstrap from "../../node_modules/bootstrap/dist/js/bootstrap.min.js";
+
 
 // En webpack, la CSS se importa dentro del JS
-import "bootstrap/dist/css/bootstrap.min.css";
-import "open-iconic/font/css/open-iconic-bootstrap.scss";
-import "../css/styles.scss";
+import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../../node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css";
+import "../scss/styles.scss";
 
 
 var myCarousel = document.querySelector('#carouselBootstrap5')

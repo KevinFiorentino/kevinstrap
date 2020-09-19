@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+//const WebpackProvideGlobalPlugin = require('webpack-provide-global-plugin');
 
 
 module.exports = {
@@ -11,14 +12,24 @@ module.exports = {
     module: {
         rules: [
             {
-                //text: { test: /\.(ttf|eot|otf|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" },
-                test: /\.css|.scss|.(ttf|eot|otf|woff|svg)(\?v=[0-9]\.[0-9]\.[0-9])$/,
-                loader: [
-                    { loader: 'style-loader' },
-                    { loader: 'css-loader' },
-                    { loader: 'sass-loader' },
-                    { loader: 'file-loader' }
+                test: /\.css$/,
+                use: [
+                    'style-loader', 'css-loader'
                 ]
+            },
+            {
+                test: /\.scss$/,
+                use: [
+                    'style-loader', 'css-loader', 'sass-loader'
+                ]
+            },
+            {
+                test: /\.(ttf|eot|otf|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
+                loader: [ 'file-loader' ]
+            },
+            {
+                test: /\.(woff)(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
+                loader: [ 'url-loader' ]
             }
         ]
     },
@@ -34,7 +45,12 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'precios.html',
             template: './src/precios.html'
+        }),
+        /*
+        new WebpackProvideGlobalPlugin({
+            Popper: ['popper.js', 'default']
         })
+        */
     ],
     devServer: {
         port: 5000
