@@ -1,15 +1,34 @@
 const webpack = require('webpack');
 const path = require('path');
+
+// Plugin para procesar las vistas
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+// Plugin para optimizar y ofuscar el JS
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+
+// Plugin para extraer el CSS del JS
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 
+
 module.exports = {
+    // Definimos punto de entrada, filename y path final
     entry: './src/js/app.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[id].[hash].bundle.js'
+        filename: '[hash].bundle.js'
+    },
+    optimization: {
+        minimizer: [
+            new UglifyJsPlugin({
+                cache: true,
+                parallel: true,
+                sourceMap: true
+            })
+        ]
     },
     module: {
+        // Definimos las distintas extensiones de archivos y con qué Loader se procesan
         rules: [
             {
                 test: /\.css$/,
@@ -67,13 +86,14 @@ module.exports = {
         }),
         new webpack.ProvidePlugin({
             $: "jquery",
-            jQuery: "jquery",
-            Popper: ['popper.js', 'default'],
+            jQuery: "jquery" //,
+            //Popper: ['popper.js', 'default']
         }),
         new MiniCSSExtractPlugin({
             filename: "styles.css",
         })
     ],
+    // Servidor corriendo en el puerto 5000 (npm run dev)
     devServer: {
         port: 5000
     }
